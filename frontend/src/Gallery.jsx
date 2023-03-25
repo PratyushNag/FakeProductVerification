@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAccount, useContract, useContractRead, useSigner } from "wagmi";
 import ABI from "./contracts/ABI.json";
 
-const CONTRACT_ADDRESS = "0x712B251D473c2f9f37B3A9A2CCA817F8A42483327";
+const CONTRACT_ADDRESS = "0x712B251D473c2f9f37B3A9A2CCA817F8A4248332";
 
 const getCloudflareURL = url =>
 	`https://cloudflare-ipfs.com/ipfs/${url?.replace("ipfs://", "")}`;
