@@ -10,7 +10,9 @@ module.exports = {
   networks: {
     mumbai: {
       url: ALCHEMY_HTTP_URL,
+      gasPrice: 250000000000,
       accounts: [PRIVATE_KEY],
+
     },
   },
   etherscan: {
