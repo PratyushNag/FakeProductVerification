@@ -11,6 +11,14 @@ async function main() {
         await nft.deployed();
         console.log("Contract address:", nft.address);
         console.log("Contract published");
+
+        console.log("Sleeping.....");
+        await sleep(40000);
+
+        await hre.run("verify:verify", {
+            address: nft.address,
+            constructorArguments: ["MintProductNFT", "MPN"],
+        });
     }
     catch (error) {
         console.error(error);

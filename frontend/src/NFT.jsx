@@ -6,7 +6,7 @@ import { useAccount, useContract, useContractRead, useSigner } from "wagmi";
 import { nanoid } from 'nanoid';
 import MD5 from 'crypto-js/md5';
 
-const CONTRACT_ADDRESS = "0x712B251D473c2f9f37B3A9A2CCA817F8A4248332";
+const CONTRACT_ADDRESS = "0xA4FaAC46ce4cC00fDb6e0B87AB97EfF5d4b80aC0";
 
 const NFT_STORAGE_KEY = import.meta.env.VITE_NFT_STORAGE_KEY;
 

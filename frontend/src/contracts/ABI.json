@@ -1,7 +1,7 @@
 {
 	"_format": "hh-sol-artifact-1",
 	"contractName": "MintProductNFT",
-	"address": "0xDCBc02E32df84D5d00E5209c6c7B0c9e6099D72C",
+	"address": "0xA4FaAC46ce4cC00fDb6e0B87AB97EfF5d4b80aC0",
 	"sourceName": "contracts/MintProductNFT.sol",
 	"abi": [
 		{
