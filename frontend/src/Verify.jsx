@@ -3,7 +3,7 @@ import ABI from "./contracts/ABI.json";
 import { useAccount, useContract, useContractRead, useSigner } from "wagmi";
 import MD5 from 'crypto-js/md5';
 import { useParams } from "react-router-dom";
-import Confetti from 'react-confetti'
+import Confetti from 'React-confetti'
 
 const CONTRACT_ADDRESS = "0x712B251D473c2f9f37B3A9A2CCA817F8A4248332";
 
