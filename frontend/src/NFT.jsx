@@ -60,7 +60,7 @@ const NFT = () => {
 				const ipfsUrl = result.url;
 				console.log("IPFS url:", ipfsUrl);
 				try {
-					contract.safeMint(address, ipfsUrl).then(res => {
+					contract.mintNFT(address, ipfsUrl).then(res => {
 						console.log(
 							"Minted Successfully: https://mumbai.polygonscan.com/tx/" +
 							res.hash
