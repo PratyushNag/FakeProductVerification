@@ -4,6 +4,7 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import Gallery from "./Gallery";
 import { Web3Button } from "@web3modal/react";
 import { useAccount } from "wagmi";
+import Verify from "./Verify";
 
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
 				{isConnected ? (
 					<Routes>
 						<Route path="/" element={<NFT />} />
+						<Route path="verify/:id?" element={<Verify />} />
 						<Route path="gallery/:id?" element={<Gallery />} />
 					</Routes>
 				) : (

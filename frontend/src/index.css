@@ -323,7 +323,7 @@ footer {
 	color: hsla(260, 15%, 75%, 0.75);
 }
 
-.Buttons__Container p > b {
+.Buttons__Container p>b {
 	color: hsla(260, 15%, 75%, 1);
 }
 
@@ -385,4 +385,21 @@ input::file-selector-button {
 	height: 2px;
 	background: hsla(260, 5%, 100%, 0.03);
 	margin-left: -1rem;
+}
+
+.Match__Container {
+	color: rgb(27, 207, 27);
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.Match__Container span {
+	line-height: 1.333;
+}
+
+.Match__Container--mismatch {
+	color: rgb(194, 40, 40);
 }

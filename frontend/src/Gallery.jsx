@@ -9,13 +9,13 @@ const getCloudflareURL = url =>
 	`https://cloudflare-ipfs.com/ipfs/${url?.replace("ipfs://", "")}`;
 
 const SingleNFT = ({ data, ...props }) => {
-	const { name, description, image } = data;
+	const { name, description, image, tokenId } = data;
 
 	const navigate = useNavigate();
 	const { id } = useParams();
 
-	const handleTransfer = () => {
-		id ? navigate(`/transfer/${id}`) : navigate(`/transfer/${props.id}`);
+	const handleVerify = () => {
+		navigate(`/verify/${tokenId}`)
 	};
 
 	return (
@@ -72,7 +72,7 @@ const SingleNFT = ({ data, ...props }) => {
 			</div>
 			<div className="Divider" />
 			<div className="Btn__Container">
-				<button className="btn FullWidth" onClick={handleTransfer}>
+				<button className="btn FullWidth" onClick={handleVerify}>
 					Verify
 				</button>
 			</div>

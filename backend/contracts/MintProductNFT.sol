@@ -22,7 +22,7 @@ contract MintProductNFT is ERC721, ERC721URIStorage, ERC721Enumerable {
         _;
     }
 
-    function mintNFT(address to, string memory uri) external onlyOwner {
+    function mintNFT(address to, string memory uri) external {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
