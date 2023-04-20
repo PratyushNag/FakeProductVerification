@@ -12,7 +12,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<nav className="header">
-				<h1>LocalHost</h1>
+				<h1>Fake Product Verification Using Blockchain</h1>
 				<div className="Link__Container">
 					<NavLink
 						to="/"
@@ -38,7 +38,7 @@ export default function App() {
 							}`
 						}
 					>
-						Gallery
+						Your Products
 					</NavLink>
 				</div>
 			</nav>
